@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shader Playground</title>
+    <meta name="author" content="Abhinav Chennubhotla">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <link href="playground.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript"
+        src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
+
+</head>
+
+<body>
+    <canvas class="glslCanvas" data-fragment-url="shader.frag"></canvas>
+    <script>
+        const canvas = document.querySelector('.glslCanvas');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        const sandbox = new GlslCanvas(canvas);
+    </script>
+</body>
+
+</html>
